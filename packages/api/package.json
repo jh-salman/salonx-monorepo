@@ -1,0 +1,30 @@
+{
+  "name": "@salonx/api",
+  "version": "1.0.0",
+  "description": "API layer for SalonX with Supabase and RTK Query",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint src --ext .ts,.tsx",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.38.0",
+    "@reduxjs/toolkit": "^2.2.3",
+    "react-redux": "^9.1.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "tsup": "^8.0.0"
+  }
+} 

@@ -1,0 +1,32 @@
+{
+  "name": "salonx-monorepo",
+  "version": "1.0.0",
+  "description": "SalonX - Complete salon management system with web and mobile apps",
+  "private": true,
+  "packageManager": "pnpm@10.11.1",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "clean": "turbo run clean",
+    "web:dev": "pnpm --filter web dev",
+    "mobile:dev": "pnpm --filter mobile dev",
+    "ui:dev": "pnpm --filter @salonx/ui dev",
+    "api:dev": "pnpm --filter @salonx/api dev"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0",
+    "turbo": "^2.0.0",
+    "typescript": "^5.0.0"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "dependencies": {
+    "@babel/runtime": "^7.28.3"
+  }
+}
