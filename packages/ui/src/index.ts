@@ -1,21 +1,15 @@
-// Button component
-export { Button } from './components/Button'
-export { buttonVariants } from './components/Button'
+// Components
+export { Button, buttonVariants } from './components/Button';
+export { Dialog } from './components/Dialog';
+export { Input } from './components/Input';
+export { Label } from './components/Label';
+export { Select } from './components/Select';
+export { Toast } from './components/Toast';
+export { ThemeSwitcher } from './components/ThemeSwitcher';
 
-// Dialog component
-export { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from './components/Dialog'
+// Utilities
+export { cn } from './lib/utils';
 
-// Input component
-export { Input } from './components/Input'
-
-// Label component
-export { Label } from './components/Label'
-
-// Select component
-export { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './components/Select'
-
-// Toast component
-export { Toast, ToastProvider, ToastViewport } from './components/Toast'
-
-// Utility functions
-export { cn } from './lib/utils' 
+// Themes
+export { themes, applyTheme, getCurrentTheme, initializeTheme } from './lib/themes';
+export type { Theme, ThemeConfig } from './lib/themes'; 

@@ -9,6 +9,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "2.1.2",
     "@reduxjs/toolkit": "^2.8.2",
     "@salonx/api": "workspace:*",
     "@salonx/config": "workspace:*",
